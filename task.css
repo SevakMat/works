@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.mec {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.league, .card-header {
+    color: black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.league_name {
+    cursor: pointer;
+}
+
+.league_cont {
+    padding-top: 5px;
+    padding-bottom: 5px;
+ 
+}
+
+.players {
+    height: 50px;
+   
+}
+
+
+@media screen and (max-width: 900px) {
+    .mec {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mec {
+        width: 100%;
+    }
+}
+
+.left_window {
+    padding: 10px;
+    width:  30%;
+    -webkit-box-shadow: 0px -1px 4px 6px rgba(133,130,130,0.76);
+    -moz-box-shadow: 0px -1px 4px 6px rgba(133,130,130,0.76);
+     box-shadow: 0px -1px 4px 6px rgba(133,130,130,0.76);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(228, 214, 214);
+}
+
+.right_window {
+    border: 2px dashed;
+    border-radius: 5%;
+    width: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#small_left,#small_right {
+    border: 1px solid;
+    border-radius: 5%;
+    width: 45%;
+    height: 90%;
+    box-sizing: border-box; 
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#small_left li, #small_right li {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.x {
+    color: green;
+    cursor: pointer;
+}
+
+#newId {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 15px;
+    margin-left: 0;
+}
+
+.taken {
+    color: grey;
+}
+
+.cls1,.cls2{
+    margin-left: 93%;
+}
+
+#node1,#node2,#node3{
+    display: flex ;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.node {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

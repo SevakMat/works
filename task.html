@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game Play</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel = "stylesheet" href ="task.css">
+  </head>
+
+  <body>
+    <div class= "mec">
+        <div class= "left_window">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <div class="mb-0">
+                            <div class="btn btn-link league" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="league_name">Seria A</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+<!--                        Սրա կլասն էղել ա collapse show, ես show-ը ջնջել եմ, որ սկզբից քարտը փակած պահի, դու բացես-->
+<!--                        Մեկ էլ էղել ա ատրիբուտ՝ data-parent="#accordion", ջնջել եմ, որ մեկը բացելուց մյուսը չփակվի-->
+                        <div class="card-body league_cont">
+                            <div>
+                                <div id="accordion2">
+                                  <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                      <div class="mb-0">
+                                        <div class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                          <div id="x1" class = "x" draggable="true" ondragstart="drag(event)"> FC Juventus </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                                      <div class="card-body players pt-0">
+                                        <ul>
+                                            <li id="x2" class = "x" draggable="true" ondragstart="drag(event)"> Cristiano Ronaldo </li>
+                                            <li id="x3" class = "x" draggable="true" ondragstart="drag(event)"> Leonardo Bonucci </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                      <div class="mb-0">
+                                        <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          <div id="x4" class = "x" draggable="true" ondragstart="drag(event)"> AC Milan </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                                      <div class="card-body players pt-0">
+                                        <ul>
+                                            <li id="x5" class = "x" draggable="true" ondragstart="drag(event)"> Gianluigi Donarumma </li>
+                                            <li id="x6" class = "x" draggable="true" ondragstart="drag(event)"> Krzystof Piatek </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <div class="mb-0">
+                            <div class="btn btn-link collapsed league" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <span class="league_name">Premier League</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                        <div class="card-body league_cont">
+                            <div id="accordion3">
+                              <div class="card">
+                                <div class="card-header" id="headingFive">
+                                  <div class="mb-0">
+                                    <div class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                      <div  id="x7" class = "x" draggable="true" ondragstart="drag(event)"> FC Liverpool </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+                                  <div class="card-body players pt-0">
+                                    <ul>
+                                        <li id="x8" class = "x" draggable="true" ondragstart="drag(event)"> Mohamed Salah </li>
+                                        <li id="x9" class = "x" draggable="true" ondragstart="drag(event)"> Roberto Firmino </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingSix">
+                                  <div class="mb-0">
+                                    <div class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                      <div id="x10" class = "x" draggable="true"  ondragstart="drag(event)"> Totenhem Hospur </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+                                  <div class="card-body players pt-0">
+                                    <ul>
+                                        <li id="x11" class = "x" draggable="true" ondragstart="drag(event)"> Son Heung-min </li>
+                                        <li id="x12" class = "x" draggable="true" ondragstart="drag(event)"> Dele Alli </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class ="right_window">
+            <div id="small_left" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class = "cls1" onclick="delbtn(event)">X</div>
+            </div>
+            <div id="small_right" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class = "cls2" onclick="delbtn(event)">X</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src = "task.js"></script>
+  </body>
+</html>
